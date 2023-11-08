@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+  }
+  .header {
+    box-sizing: border-box;
+    color: rgb(31, 35, 39);
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 80vw;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .button {
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: black;
+    color: #fff;
+    font-size: calc(10px + 0.390655vw);
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-bottom: 10px;
+  }
+
+  .button:hover {
+    background-color: rgb(172, 43, 55);
+    transform: scale(1.1);
+  }
+
+  .description{
+    width: 90%;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 20px;
+    display: none;
+    text-align: start;
+  }
+
+  @media(max-width: 660px){
+    .button {
+        width: calc(50% - 10px);
+    }
+    .emergency-1, .emergency-2{
+        order:1;
+    }
+
+  }
+  @media(min-width: 661px) and (max-width: 934px){
+    .button {
+        width: calc(33.333% - 10px);
+    }
+  }
+  @media(min-width: 935px){
+    .button {
+        width: calc(25% - 10px);
+    }
+  }
