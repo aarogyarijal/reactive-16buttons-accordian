@@ -42,7 +42,7 @@ body {
   margin-bottom: 10px;
 }
 
-.button:hover {
+.button:hover, .button:active {
   background-color: rgb(172, 43, 55);
   transform: scale(1.1);
 }
@@ -65,7 +65,7 @@ body {
   cursor: pointer;
 }
 
-.close-button:hover{
+.close-button:hover, .close-button:active{
   background-color: rgb(143, 41, 52);
   border-color: rgb(143, 41, 52);
 }
