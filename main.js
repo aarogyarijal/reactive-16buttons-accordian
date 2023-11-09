@@ -65,8 +65,13 @@ infos.forEach((info, i) => {
       police officer, WPI Alert, email or website.
     </li>
   </ul>
+  <button class="close-button" id="close-button-${i+1}" onclick="closeDiv(${i})">Close
   `;
 });
+
+function closeDiv(index) {
+  infos[index].style.display = "none";
+}
 
 buttons.forEach((button, index) => {
   button.addEventListener("click", () => {
